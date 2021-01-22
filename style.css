@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper{
-  width: 68%;
+  width: 79.5%;
   margin: auto;
 }
 
@@ -14,6 +14,7 @@ body {
 .header{
   display:flex;
   justify-content:space-between;
+  margin-bottom: 130px;
 }
 
 .logo{
@@ -51,15 +52,15 @@ body {
 
 .menu__item{
   position:relative;
-  margin-right: 24px;
-  font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+  margin-right: 26px;
+  font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
 }
 
 .menu__item:last-child{
-  margin-right:0;
+  margin-right:8px;
 }
 
 .menu__item:after{
@@ -82,54 +83,44 @@ body {
   opacity: 1
 }
 
-.main-content, .image-content{
-  display:inline-block;
+.main{
+  padding: 0 63% 285px 0;
+  background: top right no-repeat url(img/mainimg.svg);
 }
 
-.main-section{
-  display:flex;
-  justify-content:space-between;
-  margin: 80px 0px 0px;
+.main__title{
+  margin:0 0 35px;
+  padding-top: 76px;
+  font: bold 66px/87px PT_Serif, arial, helvetica, sans-serif;
+  font-style: normal;
+}
+.main__title-text_highlight{
+  background: #ECF3FF;
 }
 
-.main-content{
-   width: 47%;
-}
-
-.main-content__title{
-  margin:0px 0px;
-  padding: 17px 0px 0px;
-  font: bold 50px/66px PT_Serif, arial, helvetica, sans-serif;
+.main__paragraph {
+  margin:0 0 59px;
+  width: 80%;
+  font: 500 22px/26px Roboto, arial, helvetica, sans-serif; 
   font-style: normal;
 }
 
-.main-content__paragraph, .main-content__button {
-  font-family: Roboto, arial, helvetica, sans-serif;
+.main__button {
+  padding: 18px 35px 18px 21px;
+  font: 500 18px/21px Roboto, arial, helvetica, sans-serif; 
   font-style: normal;
-  font-weight: 500;
-}
-
-.main-content__paragraph{
-  margin:0px;
-  padding: 40px 0px 41px;
-  width: 85%;
-  font-size: 18px;
-  line-height: 21px;
-}
-
-.main-content__button{
-  width: 209px;
-  height: 44px;
-  font-size: 14px;
-  line-height: 16px;
-  margin: 0px 0px 59px;
-  background: #0056EC;
   color: #FFFFFF;
+  background: #0056EC;
+  text-decoration: none;
+  transition: opacity .5s;
+  border-radius: 4px;
 }
 
+.main__button:hover {
+  opacity: .5;
+}
 
-.image-footer{
-  display:flex;
-  justify-content:center;
-  margin: 88px 0px 38px;
+.footer{
+    height: 8px;
+  background: top center no-repeat url(img/footer.svg);
 }
