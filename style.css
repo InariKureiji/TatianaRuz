@@ -1,3 +1,14 @@
+@keyframes move {
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(900%);
+  }
+}
+
+
+
 body {
  margin: 0;
 }
@@ -47,6 +58,14 @@ body {
 
 .logo__circle_color_dark-blue{
   background: #0056EC;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+animation-fill-mode: none;
+animation-play-state: running;
 }
 
 .menu{
@@ -84,7 +103,7 @@ body {
 }
 
 .menu__item:hover:after, .menu__item:active:after {
-  opacity: 1
+  opacity: 1;
 }
 
 .main{
@@ -131,6 +150,15 @@ body {
 }
 
 @media (max-width: 1457px) {
+  @keyframes move {
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(500%);
+  }
+}
+
 .wrapper{
   width: 68%;
 }
@@ -183,6 +211,17 @@ body {
 }
 
 @media (max-width: 958px) {
+ @keyframes move {
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(480%);
+  }
+}
+
+
+
 .main__title{
   font: bold 40px/52px PT_Serif, arial, helvetica, sans-serif;
 }
@@ -190,6 +229,17 @@ body {
 
 
 @media (max-width: 870px) {
+ @keyframes move {
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(550%);
+  }
+}
+
+
+
   .main{
   padding: 0 65% 160px 0;
 }
@@ -210,6 +260,14 @@ body {
 }
 
 @media (max-width: 780px) {
+   @keyframes move {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(200%);
+  }
+}
 
 .menu {
   display: none;
